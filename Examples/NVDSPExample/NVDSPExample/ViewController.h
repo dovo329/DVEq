@@ -27,6 +27,8 @@
 //
 
 #import <UIKit/UIKit.h>
+
+#import <UIKit/UIKit.h>
 #import "Novocaine.h"
 #import "RingBuffer.h"
 #import "AudioFileReader.h"
@@ -34,15 +36,36 @@
 
 #import "NVDSP.h"
 #import "NVHighpassFilter.h"
+#import "NVLowpassFilter.h"
+#import "NVBandpassFilter.h"
+#import "NVBandpassQPeakGainFilter.h"
+#import "NVPeakingEQFilter.h"
+#import "NVSoundLevelMeter.h"
+
 
 @interface ViewController : UIViewController {
   RingBuffer *ringBuffer;
   Novocaine *audioManager;
   AudioFileReader *fileReader;
   AudioFileWriter *fileWriter;
-  NVHighpassFilter *HPF;
+//NVHighpassFilter *HPF;
+  NVLowpassFilter *HPF;
+//  NVBandpassFilter *BPF;
+//  NVBandpassQPeakGainFilter *BPF;
+  NVPeakingEQFilter *BPF;
 }
-- (IBAction)HPFSliderChanged:(UISlider *)sender;
+- (IBAction)EQ0SliderChanged:(UISlider *)sender;
+- (IBAction)EQ1SliderChanged:(UISlider *)sender;
+- (IBAction)EQ2SliderChanged:(UISlider *)sender;
+- (IBAction)EQ3SliderChanged:(UISlider *)sender;
+- (IBAction)EQ4SliderChanged:(UISlider *)sender;
+- (IBAction)EQ5SliderChanged:(UISlider *)sender;
+- (IBAction)EQ6SliderChanged:(UISlider *)sender;
+- (IBAction)EQ7SliderChanged:(UISlider *)sender;
+- (IBAction)EQ8SliderChanged:(UISlider *)sender;
+- (IBAction)EQ9SliderChanged:(UISlider *)sender;
+- (IBAction)QSliderChanged:(UISlider *)sender;
 
 @property float HPF_cornerFrequency;
+
 @end

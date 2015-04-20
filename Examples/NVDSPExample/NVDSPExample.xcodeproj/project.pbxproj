@@ -13,7 +13,6 @@
 		807E5FEC172980CC00EF9F48 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 807E5FEA172980CC00EF9F48 /* InfoPlist.strings */; };
 		807E5FEE172980CC00EF9F48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 807E5FED172980CC00EF9F48 /* main.m */; };
 		807E5FFB172980CC00EF9F48 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 807E5FF9172980CC00EF9F48 /* MainStoryboard_iPhone.storyboard */; };
-		807E5FFE172980CC00EF9F48 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 807E5FFC172980CC00EF9F48 /* MainStoryboard_iPad.storyboard */; };
 		807E6001172980CC00EF9F48 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 807E6000172980CC00EF9F48 /* ViewController.mm */; };
 		807E6010172AA38500EF9F48 /* AudioFileReader.mm in Sources */ = {isa = PBXBuildFile; fileRef = 807E6009172AA38500EF9F48 /* AudioFileReader.mm */; };
 		807E6011172AA38500EF9F48 /* AudioFileWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 807E600B172AA38500EF9F48 /* AudioFileWriter.m */; };
@@ -36,6 +35,7 @@
 		807E6046172AC22500EF9F48 /* NVLowShelvingFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 807E6039172AC22500EF9F48 /* NVLowShelvingFilter.m */; };
 		807E6047172AC22500EF9F48 /* NVNotchFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 807E603B172AC22500EF9F48 /* NVNotchFilter.m */; };
 		807E6048172AC22500EF9F48 /* NVPeakingEQFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 807E603D172AC22500EF9F48 /* NVPeakingEQFilter.m */; };
+		A56399A91AE5C129001EA54A /* DemoSong.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A56399A81AE5C129001EA54A /* DemoSong.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,7 +49,6 @@
 		807E5FEF172980CC00EF9F48 /* NVDSPExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NVDSPExample-Prefix.pch"; sourceTree = "<group>"; };
 		807E5FF0172980CC00EF9F48 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		807E5FFA172980CC00EF9F48 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		807E5FFD172980CC00EF9F48 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		807E5FFF172980CC00EF9F48 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		807E6000172980CC00EF9F48 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		807E6008172AA38500EF9F48 /* AudioFileReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioFileReader.h; sourceTree = "<group>"; };
@@ -89,6 +88,7 @@
 		807E603B172AC22500EF9F48 /* NVNotchFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVNotchFilter.m; sourceTree = "<group>"; };
 		807E603C172AC22500EF9F48 /* NVPeakingEQFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVPeakingEQFilter.h; sourceTree = "<group>"; };
 		807E603D172AC22500EF9F48 /* NVPeakingEQFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVPeakingEQFilter.m; sourceTree = "<group>"; };
+		A56399A81AE5C129001EA54A /* DemoSong.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = DemoSong.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,7 +146,6 @@
 				807E6014172AAEF300EF9F48 /* AppDelegate.mm */,
 				807E5FF0172980CC00EF9F48 /* AppDelegate.h */,
 				807E5FF9172980CC00EF9F48 /* MainStoryboard_iPhone.storyboard */,
-				807E5FFC172980CC00EF9F48 /* MainStoryboard_iPad.storyboard */,
 				807E5FFF172980CC00EF9F48 /* ViewController.h */,
 				807E6000172980CC00EF9F48 /* ViewController.mm */,
 				807E5FE8172980CC00EF9F48 /* Supporting Files */,
@@ -157,6 +156,7 @@
 		807E5FE8172980CC00EF9F48 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A56399A81AE5C129001EA54A /* DemoSong.m4a */,
 				807E6016172AAFE200EF9F48 /* TLC.mp3 */,
 				807E5FE9172980CC00EF9F48 /* NVDSPExample-Info.plist */,
 				807E5FEA172980CC00EF9F48 /* InfoPlist.strings */,
@@ -281,9 +281,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A56399A91AE5C129001EA54A /* DemoSong.m4a in Resources */,
 				807E5FEC172980CC00EF9F48 /* InfoPlist.strings in Resources */,
 				807E5FFB172980CC00EF9F48 /* MainStoryboard_iPhone.storyboard in Resources */,
-				807E5FFE172980CC00EF9F48 /* MainStoryboard_iPad.storyboard in Resources */,
 				807E6017172AAFE200EF9F48 /* TLC.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,14 +334,6 @@
 				807E5FFA172980CC00EF9F48 /* en */,
 			);
 			name = MainStoryboard_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		807E5FFC172980CC00EF9F48 /* MainStoryboard_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				807E5FFD172980CC00EF9F48 /* en */,
-			);
-			name = MainStoryboard_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -446,6 +438,7 @@
 				807E6006172980CC00EF9F48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="7531" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" variant="6xAndEarlier" propertyAccessControl="none" useAutolayout="YES" promptedForUpgradeToXcode5="NO" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+        <deployment identifier="iOS"/>
+        <development version="4600" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -9,38 +11,121 @@
             <objects>
                 <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2000" minValue="0.0" maxValue="8000" translatesAutoresizingMaskIntoConstraints="NO" id="QP8-Ak-m3Y">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-20" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="Int-j7-IrH">
+                                <rect key="frame" x="-2" y="20" width="324" height="31"/>
                                 <connections>
-                                    <action selector="HPFSliderChanged:" destination="2" eventType="valueChanged" id="2yL-32-ndd"/>
+                                    <action selector="EQ0SliderChanged:" destination="2" eventType="valueChanged" id="Za1-Ri-TRD"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-20" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="6LH-7T-Czw">
+                                <rect key="frame" x="-2" y="58" width="324" height="31"/>
+                                <connections>
+                                    <action selector="EQ1SliderChanged:" destination="2" eventType="valueChanged" id="wVe-om-d2N"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-20" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="tpJ-yc-P0q">
+                                <rect key="frame" x="-2" y="96" width="324" height="31"/>
+                                <connections>
+                                    <action selector="EQ2SliderChanged:" destination="2" eventType="valueChanged" id="p71-WX-m9c"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-20" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="gP7-Zq-nAv">
+                                <rect key="frame" x="-2" y="134" width="324" height="31"/>
+                                <connections>
+                                    <action selector="EQ3SliderChanged:" destination="2" eventType="valueChanged" id="z8Z-ni-yss"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-20" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="Mww-zq-cyZ">
+                                <rect key="frame" x="-2" y="172" width="324" height="31"/>
+                                <connections>
+                                    <action selector="EQ4SliderChanged:" destination="2" eventType="valueChanged" id="ifS-uH-OMu"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-20" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="o35-Xf-D5P">
+                                <rect key="frame" x="-2" y="210" width="324" height="31"/>
+                                <connections>
+                                    <action selector="EQ5SliderChanged:" destination="2" eventType="valueChanged" id="f7U-Pl-l7p"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-20" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="VRa-yb-6JU">
+                                <rect key="frame" x="-2" y="248" width="324" height="31"/>
+                                <connections>
+                                    <action selector="EQ6SliderChanged:" destination="2" eventType="valueChanged" id="2uW-Gm-LtX"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-20" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="jby-8W-vGd">
+                                <rect key="frame" x="-2" y="286" width="324" height="31"/>
+                                <connections>
+                                    <action selector="EQ7SliderChanged:" destination="2" eventType="valueChanged" id="Q4Y-Ik-mnQ"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-20" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="ezg-iv-VEj">
+                                <rect key="frame" x="-2" y="324" width="324" height="31"/>
+                                <connections>
+                                    <action selector="EQ8SliderChanged:" destination="2" eventType="valueChanged" id="SeF-oz-tNT"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-20" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="D3R-GX-3OF">
+                                <rect key="frame" x="-2" y="362" width="324" height="31"/>
+                                <connections>
+                                    <action selector="EQ9SliderChanged:" destination="2" eventType="valueChanged" id="GKe-7X-BcT"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="RE1-5V-PB7">
+                                <rect key="frame" x="-2" y="415" width="324" height="31"/>
+                                <connections>
+                                    <action selector="EQ9SliderChanged:" destination="2" eventType="valueChanged" id="IX1-Rt-A7T"/>
+                                    <action selector="QSliderChanged:" destination="2" eventType="valueChanged" id="hg5-xG-qka"/>
                                 </connections>
                             </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="QP8-Ak-m3Y" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="7Hx-yb-uik"/>
-                            <constraint firstAttribute="trailing" secondItem="QP8-Ak-m3Y" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="VqG-uV-3SV"/>
-                            <constraint firstItem="QP8-Ak-m3Y" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="y0O-xF-2bD"/>
+                            <constraint firstItem="ezg-iv-VEj" firstAttribute="top" secondItem="jby-8W-vGd" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="0YI-Px-HaH"/>
+                            <constraint firstItem="o35-Xf-D5P" firstAttribute="trailing" secondItem="Mww-zq-cyZ" secondAttribute="trailing" type="default" id="3Bl-z9-LI5"/>
+                            <constraint firstItem="6LH-7T-Czw" firstAttribute="centerX" secondItem="Int-j7-IrH" secondAttribute="centerX" type="user" id="3Nd-8r-WGL"/>
+                            <constraint firstItem="jby-8W-vGd" firstAttribute="top" secondItem="VRa-yb-6JU" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="5q0-dM-wxk"/>
+                            <constraint firstItem="RE1-5V-PB7" firstAttribute="leading" secondItem="D3R-GX-3OF" secondAttribute="leading" type="default" id="AM5-Mo-w7l"/>
+                            <constraint firstItem="gP7-Zq-nAv" firstAttribute="top" secondItem="tpJ-yc-P0q" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="BaW-CT-blN"/>
+                            <constraint firstItem="tpJ-yc-P0q" firstAttribute="leading" secondItem="6LH-7T-Czw" secondAttribute="leading" type="default" id="Ciq-Yo-MUl"/>
+                            <constraint firstItem="Mww-zq-cyZ" firstAttribute="top" secondItem="gP7-Zq-nAv" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="GYB-Y2-7TG"/>
+                            <constraint firstItem="D3R-GX-3OF" firstAttribute="top" secondItem="ezg-iv-VEj" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="GqM-xW-v1e"/>
+                            <constraint firstItem="jby-8W-vGd" firstAttribute="leading" secondItem="VRa-yb-6JU" secondAttribute="leading" type="default" id="IuK-ga-Vz5"/>
+                            <constraint firstItem="RE1-5V-PB7" firstAttribute="leading" secondItem="ezg-iv-VEj" secondAttribute="leading" type="default" id="Izi-Fj-md2"/>
+                            <constraint firstItem="tpJ-yc-P0q" firstAttribute="top" secondItem="6LH-7T-Czw" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Izp-zI-YQ7"/>
+                            <constraint firstItem="ezg-iv-VEj" firstAttribute="trailing" secondItem="jby-8W-vGd" secondAttribute="trailing" type="default" id="K3o-zz-1NU"/>
+                            <constraint firstItem="o35-Xf-D5P" firstAttribute="leading" secondItem="Mww-zq-cyZ" secondAttribute="leading" type="default" id="Kgt-Ul-ijW"/>
+                            <constraint firstItem="gP7-Zq-nAv" firstAttribute="leading" secondItem="tpJ-yc-P0q" secondAttribute="leading" type="default" id="OU3-Qb-6uG"/>
+                            <constraint firstItem="o35-Xf-D5P" firstAttribute="top" secondItem="Mww-zq-cyZ" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="R87-CL-c7F"/>
+                            <constraint firstAttribute="bottom" secondItem="RE1-5V-PB7" secondAttribute="bottom" constant="15" id="RXa-eJ-AZ5"/>
+                            <constraint firstItem="gP7-Zq-nAv" firstAttribute="trailing" secondItem="tpJ-yc-P0q" secondAttribute="trailing" type="default" id="STG-1a-6kH"/>
+                            <constraint firstItem="jby-8W-vGd" firstAttribute="trailing" secondItem="VRa-yb-6JU" secondAttribute="trailing" type="default" id="aeW-7X-CdC"/>
+                            <constraint firstAttribute="width" secondItem="6LH-7T-Czw" secondAttribute="width" type="user" id="bNS-5Z-LpD"/>
+                            <constraint firstAttribute="width" secondItem="Int-j7-IrH" secondAttribute="width" type="user" id="ecF-h7-Qlz"/>
+                            <constraint firstItem="ezg-iv-VEj" firstAttribute="leading" secondItem="jby-8W-vGd" secondAttribute="leading" type="default" id="erV-ir-3kn"/>
+                            <constraint firstItem="VRa-yb-6JU" firstAttribute="top" secondItem="o35-Xf-D5P" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="g4t-iY-Huf"/>
+                            <constraint firstItem="RE1-5V-PB7" firstAttribute="trailing" secondItem="ezg-iv-VEj" secondAttribute="trailing" type="default" id="iUD-vT-DbO"/>
+                            <constraint firstItem="VRa-yb-6JU" firstAttribute="leading" secondItem="o35-Xf-D5P" secondAttribute="leading" type="default" id="kdD-2K-OqD"/>
+                            <constraint firstItem="RE1-5V-PB7" firstAttribute="trailing" secondItem="D3R-GX-3OF" secondAttribute="trailing" type="default" id="mnR-H8-law"/>
+                            <constraint firstItem="Mww-zq-cyZ" firstAttribute="leading" secondItem="gP7-Zq-nAv" secondAttribute="leading" type="default" id="nil-nH-fL2"/>
+                            <constraint firstItem="Int-j7-IrH" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" type="user" id="nvN-5v-mGw"/>
+                            <constraint firstItem="VRa-yb-6JU" firstAttribute="trailing" secondItem="o35-Xf-D5P" secondAttribute="trailing" type="default" id="oKa-in-1MO"/>
+                            <constraint firstItem="Mww-zq-cyZ" firstAttribute="trailing" secondItem="gP7-Zq-nAv" secondAttribute="trailing" type="default" id="oqX-Iw-Enf"/>
+                            <constraint firstItem="Int-j7-IrH" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="user" id="pbQ-DC-9le"/>
+                            <constraint firstAttribute="trailing" secondItem="Int-j7-IrH" secondAttribute="trailing" type="user" id="qGR-xp-ger"/>
+                            <constraint firstItem="tpJ-yc-P0q" firstAttribute="trailing" secondItem="6LH-7T-Czw" secondAttribute="trailing" type="default" id="qLn-Bb-Z5Q"/>
+                            <constraint firstItem="6LH-7T-Czw" firstAttribute="top" secondItem="Int-j7-IrH" secondAttribute="bottom" constant="8" symbolic="YES" type="user" id="x0S-7l-OOz"/>
                         </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
-    <classes>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="HPFSliderChanged:" candidateClass="UISlider"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

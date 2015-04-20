@@ -1,5 +1,3 @@
-Doug edited to implement the equalizer and controls using the NVPeakingEQFilters as suggested but not fully implemented by the example Equalizer.mm file.
-
 ## Audio Filters on iOS and OSX
 [![DOI](https://zenodo.org/badge/6288/bartolsthoorn/NVDSP.png)](http://dx.doi.org/10.5281/zenodo.12415)
 
